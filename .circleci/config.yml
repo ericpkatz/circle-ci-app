@@ -9,7 +9,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:7.10
         environment:
-          DATABASE_URL: postgres://localhost/circle_ci_test
+          DATABASE_URL: postgres://postgres@localhost/circle_test
       - image: circleci/postgres:9.6.5-alpine-ram
 
       # Specify service dependencies here if necessary
