@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha *spec.js",
+    "test:dev": "npm run test -- --watch=true"
   },
   "keywords": [],
   "author": "",
