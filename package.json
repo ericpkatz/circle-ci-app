@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha *spec.js",
-    "test:dev": "npm run test -- --watch=true"
+    "test:dev": "DATABASE_URL=postgres://localhost/my_circle_ci_app npm run test -- --watch=true"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "pg": "^7.11.0",
+    "sequelize": "^5.8.6"
   }
 }
